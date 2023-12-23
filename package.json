@@ -6,13 +6,13 @@
   "license": "ISC",
   "private": false,
   "main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"directories": {
-		"lib": "dist"
-	},
-	"files": [
-		"dist"
-	],
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist"
+  },
+  "files": [
+    "dist"
+  ],
   "bin": {
     "init-husky": "./dist/bin/init-husky.js",
     "commitlint": "./node_modules/.bin/commitlint",
@@ -22,9 +22,15 @@
     "prettier": "./node_modules/.bin/prettier"
   },
   "scripts": {
+    "eslint": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore src/**/*.ts",
+		"eslint:fix": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore --fix src/**/*.ts",
+		"prettier": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check \"./src/**/*.{ts,json}\"",
+		"prettier:write": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check --write \"./packages/**/*.{ts,json}\"",
+		"format": "pnpm prettier:write && pnpm eslint:fix",
     "build:development": "rm -rf dist && tsc --project tsconfig.development.json",
-		"build:stage": "rm -rf dist && tsc --project tsconfig.stage.json",
-		"build:production": "rm -rf dist && tsc --project tsconfig.production.json"
+    "build:stage": "rm -rf dist && tsc --project tsconfig.stage.json",
+    "build:production": "rm -rf dist && tsc --project tsconfig.production.json",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@commitlint/cli": "18.4.3",
