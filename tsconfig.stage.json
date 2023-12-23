@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.development.json",
+	"compilerOptions": {
+		"baseUrl": "./dist",
+		"sourceMap": false
+	}
+}

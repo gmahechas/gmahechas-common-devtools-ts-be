@@ -1,0 +1,52 @@
+{
+  "name": "@gmahechas/common-devtools-ts-be",
+  "version": "0.0.0",
+  "description": "common-devtools-ts-be",
+  "author": "gmahechas",
+  "license": "ISC",
+  "private": false,
+  "main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"directories": {
+		"lib": "dist"
+	},
+	"files": [
+		"dist"
+	],
+  "bin": {
+    "init-husky": "./bin/init-husky.js",
+    "commitlint": "./node_modules/.bin/commitlint",
+    "eslint": "./node_modules/.bin/eslint",
+    "husky": "./node_modules/.bin/husky",
+    "jest": "./node_modules/.bin/jest",
+    "lint-staged": "./node_modules/.bin/lint-staged",
+    "prettier": "./node_modules/.bin/prettier",
+    "ts-jest": "./node_modules/.bin/ts-jest"
+  },
+  "scripts": {
+    "build:development": "rm -rf dist && tsc --project tsconfig.development.json",
+		"build:stage": "rm -rf dist && tsc --project tsconfig.stage.json",
+		"build:production": "rm -rf dist && tsc --project tsconfig.production.json"
+  },
+  "dependencies": {
+    "@commitlint/cli": "18.4.3",
+    "@commitlint/config-conventional": "18.4.3",
+    "@types/eslint": "8.56.0",
+    "@types/jest": "29.5.11",
+    "@types/lint-staged": "13.3.0",
+    "@typescript-eslint/eslint-plugin": "6.14.0",
+    "@typescript-eslint/parser": "6.14.0",
+    "eslint": "8.56.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "husky": "8.0.3",
+    "jest": "29.7.0",
+    "lint-staged": "15.2.0",
+    "prettier": "3.1.1",
+    "prettier-plugin-organize-imports": "3.2.4",
+    "ts-jest": "29.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.4",
+    "typescript": "5.3.3"
+  }
+}
