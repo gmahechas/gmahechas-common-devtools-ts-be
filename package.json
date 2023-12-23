@@ -25,7 +25,7 @@
     "eslint": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore src/**/*.ts",
 		"eslint:fix": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore --fix src/**/*.ts",
 		"prettier": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check \"./src/**/*.{ts,json}\"",
-		"prettier:write": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check --write \"./packages/**/*.{ts,json}\"",
+		"prettier:write": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check --write \"./src/**/*.{ts,json}\"",
 		"format": "pnpm prettier:write && pnpm eslint:fix",
     "build:development": "rm -rf dist && tsc --project tsconfig.development.json",
     "build:stage": "rm -rf dist && tsc --project tsconfig.stage.json",

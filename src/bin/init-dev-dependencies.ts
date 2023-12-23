@@ -14,6 +14,9 @@ if (!appPackageJsonParsed.devDependencies) {
 	appPackageJsonParsed.devDependencies = {};
 }
 
-appPackageJsonParsed.devDependencies = Object.assign(appPackageJsonParsed.devDependencies, localPackageJsonParsed.devDependencies);
+appPackageJsonParsed.devDependencies = Object.assign(
+	appPackageJsonParsed.devDependencies,
+	localPackageJsonParsed.devDependencies,
+);
 
 fs.writeFileSync(path.join(appPath, 'package.json'), JSON.stringify(appPackageJsonParsed, null, 2));
