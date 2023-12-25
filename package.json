@@ -11,7 +11,13 @@
     "lib": "dist"
   },
   "files": [
-    "dist"
+    "dist",
+    ".eslintignore",
+    ".eslintrc.js",
+    ".lintstagedrc",
+    ".prettierignore",
+    ".prettierrc",
+    "commitlint.config.js"
   ],
   "bin": {
     "init-husky": "./dist/bin/init-husky.js",
