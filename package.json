@@ -20,7 +20,6 @@
     "commitlint.config.js"
   ],
   "bin": {
-    "lint-staged": "./node_modules/.bin/lint-staged",
     "init-husky": "./dist/bin/init-husky.js"
   },
   "scripts": {
