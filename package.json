@@ -20,11 +20,6 @@
     "commitlint.config.js"
   ],
   "bin": {
-    "commitlint": "./node_modules/.bin/commitlint",
-    "eslint": "./node_modules/.bin/eslint",
-    "husky": "./node_modules/.bin/husky",
-    "lint-staged": "./node_modules/.bin/lint-staged",
-    "prettier": "./node_modules/.bin/prettier",
     "init-husky": "./dist/bin/init-husky.js"
   },
   "scripts": {
