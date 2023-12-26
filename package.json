@@ -20,12 +20,12 @@
     "commitlint.config.js"
   ],
   "bin": {
-    "init-husky": "./dist/bin/init-husky.js",
     "commitlint": "./node_modules/.bin/commitlint",
     "eslint": "./node_modules/.bin/eslint",
     "husky": "./node_modules/.bin/husky",
     "lint-staged": "./node_modules/.bin/lint-staged",
-    "prettier": "./node_modules/.bin/prettier"
+    "prettier": "./node_modules/.bin/prettier",
+    "init-husky": "./dist/bin/init-husky.js"
   },
   "scripts": {
     "eslint": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore src/**/*.ts",
