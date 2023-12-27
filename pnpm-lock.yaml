@@ -11,6 +11,9 @@ dependencies:
   '@commitlint/config-conventional':
     specifier: 18.4.3
     version: 18.4.3
+  '@gmahechas/common-typescript-ts-be':
+    specifier: 5.3.3
+    version: 5.3.3
   '@types/eslint':
     specifier: 8.56.0
     version: 8.56.0
@@ -41,11 +44,6 @@ dependencies:
   prettier-plugin-organize-imports:
     specifier: 3.2.4
     version: 3.2.4(prettier@3.1.1)(typescript@5.3.3)
-
-devDependencies:
-  '@gmahechas/common-typescript-ts-be':
-    specifier: 5.3.3
-    version: 5.3.3
 
 packages:
 
@@ -282,7 +280,7 @@ packages:
     dependencies:
       '@types/node': 20.10.4
       typescript: 5.3.3
-    dev: true
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
@@ -363,7 +361,7 @@ packages:
     resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
     dependencies:
       undici-types: 5.26.5
-    dev: true
+    dev: false
 
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2218,9 +2216,11 @@ packages:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: false
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: false
 
   /universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
